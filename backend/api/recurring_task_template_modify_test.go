@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/GeneralTask/task-manager/backend/database"
+	"github.com/franchizzle/task-manager/backend/database"
 	"github.com/stretchr/testify/assert"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
@@ -19,7 +19,7 @@ func TestRecurringTaskTemplateModify(t *testing.T) {
 	assert.NoError(t, err)
 	defer dbCleanup()
 
-	authToken := login("template_modify@generaltask.com", "")
+	authToken := login("template_modify@resonant-kelpie-404a42.netlify.app", "")
 	userID := getUserIDFromAuthToken(t, db, authToken)
 
 	api, dbCleanup := GetAPIWithDBCleanup()

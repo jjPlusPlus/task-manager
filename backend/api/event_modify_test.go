@@ -8,11 +8,11 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/GeneralTask/task-manager/backend/external"
-	"github.com/GeneralTask/task-manager/backend/testutils"
+	"github.com/franchizzle/task-manager/backend/external"
+	"github.com/franchizzle/task-manager/backend/testutils"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 
-	"github.com/GeneralTask/task-manager/backend/database"
+	"github.com/franchizzle/task-manager/backend/database"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -21,7 +21,7 @@ func TestEventModify(t *testing.T) {
 	assert.NoError(t, err)
 	defer dbCleanup()
 
-	authToken := login("TestInvalidEventModify@generaltask.com", "")
+	authToken := login("TestInvalidEventModify@resonant-kelpie-404a42.netlify.app", "")
 	userID := getUserIDFromAuthToken(t, db, authToken)
 	accountID := "duck@duck.com"
 

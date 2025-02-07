@@ -4,8 +4,8 @@ import (
 	"context"
 	"strings"
 
-	"github.com/GeneralTask/task-manager/backend/database"
-	"github.com/GeneralTask/task-manager/backend/utils"
+	"github.com/franchizzle/task-manager/backend/database"
+	"github.com/franchizzle/task-manager/backend/utils"
 	"github.com/gin-gonic/gin"
 	"go.mongodb.org/mongo-driver/bson"
 )
@@ -43,7 +43,7 @@ func (api *API) UserInfoGet(c *gin.Context) {
 		OptedIntoMarketing:  userObject.OptedIntoMarketing != nil && *userObject.OptedIntoMarketing,
 		BusinessModeEnabled: userObject.BusinessModeEnabled != nil && *userObject.BusinessModeEnabled,
 		Name:                userObject.Name,
-		IsEmployee:          strings.HasSuffix(strings.ToLower(userObject.Email), "@generaltask.com"),
+		IsEmployee:          strings.HasSuffix(strings.ToLower(userObject.Email), "@resonant-kelpie-404a42.netlify.app"),
 		Email:               userObject.Email,
 		IsCompanyEmail:      isCompanyEmail(userObject.Email),
 		LinearName:          userObject.LinearName,

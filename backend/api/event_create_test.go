@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/GeneralTask/task-manager/backend/database"
-	"github.com/GeneralTask/task-manager/backend/external"
-	"github.com/GeneralTask/task-manager/backend/testutils"
+	"github.com/franchizzle/task-manager/backend/database"
+	"github.com/franchizzle/task-manager/backend/external"
+	"github.com/franchizzle/task-manager/backend/testutils"
 	"github.com/stretchr/testify/assert"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
@@ -25,7 +25,7 @@ func TestEventCreate(t *testing.T) {
 	assert.NoError(t, err)
 	defer dbCleanup()
 
-	authToken := login("TestEventCreate@generaltask.com", "")
+	authToken := login("TestEventCreate@resonant-kelpie-404a42.netlify.app", "")
 	userID := getUserIDFromAuthToken(t, db, authToken)
 	url := "/events/create/gcal/"
 	startTime, _ := time.Parse(time.RFC3339, "2022-08-21T12:30:00.000-07:00")

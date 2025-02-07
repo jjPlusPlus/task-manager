@@ -11,15 +11,15 @@ import (
 
 	"go.mongodb.org/mongo-driver/mongo"
 
-	"github.com/GeneralTask/task-manager/backend/constants"
-	"github.com/GeneralTask/task-manager/backend/database"
-	"github.com/GeneralTask/task-manager/backend/external"
+	"github.com/franchizzle/task-manager/backend/constants"
+	"github.com/franchizzle/task-manager/backend/database"
+	"github.com/franchizzle/task-manager/backend/external"
 	"github.com/stretchr/testify/assert"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
 func TestPullRequestList(t *testing.T) {
-	authToken := login("test_pull_request_list@generaltask.com", "")
+	authToken := login("test_pull_request_list@resonant-kelpie-404a42.netlify.app", "")
 
 	db, dbCleanup, err := database.GetDBConnection()
 	assert.NoError(t, err)

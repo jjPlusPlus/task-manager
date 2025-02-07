@@ -5,9 +5,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/GeneralTask/task-manager/backend/config"
-	"github.com/GeneralTask/task-manager/backend/external"
-	"github.com/GeneralTask/task-manager/backend/testutils"
+	"github.com/franchizzle/task-manager/backend/config"
+	"github.com/franchizzle/task-manager/backend/external"
+	"github.com/franchizzle/task-manager/backend/testutils"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -91,7 +91,7 @@ func TestLinkSlackApp(t *testing.T) {
 
 		router := GetRouter(api)
 		request, _ := http.NewRequest("GET", "/link_app/slack/?code=&state=", nil)
-		authToken := login("authorize_success@generaltask.com", "")
+		authToken := login("authorize_success@resonant-kelpie-404a42.netlify.app", "")
 		request.AddCookie(&http.Cookie{Name: "authToken", Value: authToken})
 		recorder := httptest.NewRecorder()
 		router.ServeHTTP(recorder, request)
@@ -105,7 +105,7 @@ func TestLinkSlackApp(t *testing.T) {
 
 		router := GetRouter(api)
 		request, _ := http.NewRequest("GET", "/link_app/slack/?code=123abc&state=", nil)
-		authToken := login("authorize_success@generaltask.com", "")
+		authToken := login("authorize_success@resonant-kelpie-404a42.netlify.app", "")
 		request.AddCookie(&http.Cookie{Name: "authToken", Value: authToken})
 		recorder := httptest.NewRecorder()
 		router.ServeHTTP(recorder, request)
@@ -119,7 +119,7 @@ func TestLinkSlackApp(t *testing.T) {
 
 		router := GetRouter(api)
 		request, _ := http.NewRequest("GET", "/link_app/slack/?code=123abc&state=", nil)
-		authToken := login("authorize_success@generaltask.com", "")
+		authToken := login("authorize_success@resonant-kelpie-404a42.netlify.app", "")
 		request.AddCookie(&http.Cookie{Name: "authToken", Value: authToken})
 		recorder := httptest.NewRecorder()
 		router.ServeHTTP(recorder, request)
@@ -133,7 +133,7 @@ func TestLinkSlackApp(t *testing.T) {
 
 		router := GetRouter(api)
 		request, _ := http.NewRequest("GET", "/link_app/slack/?code=123abc&state=", nil)
-		authToken := login("authorize_success@generaltask.com", "")
+		authToken := login("authorize_success@resonant-kelpie-404a42.netlify.app", "")
 		request.AddCookie(&http.Cookie{Name: "authToken", Value: authToken})
 		recorder := httptest.NewRecorder()
 		router.ServeHTTP(recorder, request)

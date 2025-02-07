@@ -8,14 +8,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/GeneralTask/task-manager/backend/database"
-	"github.com/GeneralTask/task-manager/backend/testutils"
+	"github.com/franchizzle/task-manager/backend/database"
+	"github.com/franchizzle/task-manager/backend/testutils"
 	"github.com/stretchr/testify/assert"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
 func TestNoteDetail(t *testing.T) {
-	authToken := login("test_notes_detail@generaltask.com", "")
+	authToken := login("test_notes_detail@resonant-kelpie-404a42.netlify.app", "")
 	title1 := "title1"
 	title2 := "title2"
 

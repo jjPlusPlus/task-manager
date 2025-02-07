@@ -7,15 +7,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/GeneralTask/task-manager/backend/constants"
-	"github.com/GeneralTask/task-manager/backend/database"
+	"github.com/franchizzle/task-manager/backend/constants"
+	"github.com/franchizzle/task-manager/backend/database"
 	"github.com/stretchr/testify/assert"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
 func TestDashboardFetch(t *testing.T) {
-	authToken := login("test_dashboard_fetch@generaltask.com", "")
+	authToken := login("test_dashboard_fetch@resonant-kelpie-404a42.netlify.app", "")
 	UnauthorizedTest(t, "GET", "/dashboard/data/fetch/", nil)
 	api, dbCleanup := GetAPIWithDBCleanup()
 	defer dbCleanup()

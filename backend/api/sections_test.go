@@ -10,8 +10,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/GeneralTask/task-manager/backend/constants"
-	"github.com/GeneralTask/task-manager/backend/database"
+	"github.com/franchizzle/task-manager/backend/constants"
+	"github.com/franchizzle/task-manager/backend/database"
 	"github.com/stretchr/testify/assert"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
@@ -22,7 +22,7 @@ type sectionCreateResponse struct {
 }
 
 func TestSections(t *testing.T) {
-	authToken := login("test_sections@generaltask.com", "")
+	authToken := login("test_sections@resonant-kelpie-404a42.netlify.app", "")
 	createdTaskID := ""
 	createdTaskID2 := ""
 	UnauthorizedTest(t, "GET", "/sections/", nil)
@@ -121,7 +121,7 @@ func TestSections(t *testing.T) {
 		defer dbCleanup()
 		_true := true
 		_false := false
-		authToken := login("test_sections_v2@generaltask.com", "")
+		authToken := login("test_sections_v2@resonant-kelpie-404a42.netlify.app", "")
 		userID := getUserIDFromAuthToken(t, api.DB, authToken)
 
 		body := ServeRequest(t, authToken, "POST", "/sections/create/", bytes.NewBuffer([]byte(`{"name": "important videos"}`)), http.StatusCreated, api)

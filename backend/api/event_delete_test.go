@@ -7,11 +7,11 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/GeneralTask/task-manager/backend/testutils"
+	"github.com/franchizzle/task-manager/backend/testutils"
 	"go.mongodb.org/mongo-driver/bson"
 
-	"github.com/GeneralTask/task-manager/backend/database"
-	"github.com/GeneralTask/task-manager/backend/external"
+	"github.com/franchizzle/task-manager/backend/database"
+	"github.com/franchizzle/task-manager/backend/external"
 	"github.com/stretchr/testify/assert"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
@@ -21,7 +21,7 @@ func TestEventDelete(t *testing.T) {
 	assert.NoError(t, err)
 	defer dbCleanup()
 
-	authToken := login("approved@generaltask.com", "")
+	authToken := login("approved@resonant-kelpie-404a42.netlify.app", "")
 	userID := getUserIDFromAuthToken(t, db, authToken)
 
 	eventCollection := database.GetCalendarEventCollection(db)
@@ -59,7 +59,7 @@ func TestEventDelete(t *testing.T) {
 	})
 
 	t.Run("InvalidUser", func(t *testing.T) {
-		secondAuthToken := login("tester@generaltask.com", "")
+		secondAuthToken := login("tester@resonant-kelpie-404a42.netlify.app", "")
 		ServeRequest(t, secondAuthToken, "DELETE", "/events/delete/"+calendarTaskIDHex+"1/", nil, http.StatusNotFound, nil)
 	})
 

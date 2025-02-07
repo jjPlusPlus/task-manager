@@ -8,13 +8,13 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/GeneralTask/task-manager/backend/database"
+	"github.com/franchizzle/task-manager/backend/database"
 	"github.com/stretchr/testify/assert"
 	"go.mongodb.org/mongo-driver/bson"
 )
 
 func TestLogEventAdd(t *testing.T) {
-	authToken := login("approved@generaltask.com", "")
+	authToken := login("approved@resonant-kelpie-404a42.netlify.app", "")
 	UnauthorizedTest(t, "POST", "/log_events/", nil)
 	t.Run("EmptyPayload", func(t *testing.T) {
 		api, dbCleanup := GetAPIWithDBCleanup()

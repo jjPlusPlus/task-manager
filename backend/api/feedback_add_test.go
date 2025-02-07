@@ -8,13 +8,13 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/GeneralTask/task-manager/backend/database"
+	"github.com/franchizzle/task-manager/backend/database"
 	"github.com/stretchr/testify/assert"
 	"go.mongodb.org/mongo-driver/bson"
 )
 
 func TestFeedbackAdd(t *testing.T) {
-	authToken := login("approved@generaltask.com", "Snoop Dogg")
+	authToken := login("approved@resonant-kelpie-404a42.netlify.app", "Snoop Dogg")
 	UnauthorizedTest(t, "POST", "/feedback/", nil)
 	t.Run("EmptyPayload", func(t *testing.T) {
 		api, dbCleanup := GetAPIWithDBCleanup()
@@ -78,7 +78,7 @@ func TestFeedbackAdd(t *testing.T) {
 		).Decode(&entry)
 		assert.NoError(t, err)
 		assert.Equal(t, "I don't like it one bit!", entry.Feedback)
-		assert.Equal(t, "approved@generaltask.com", entry.Email)
+		assert.Equal(t, "approved@resonant-kelpie-404a42.netlify.app", entry.Email)
 		assert.Equal(t, "Snoop Dogg", entry.Name)
 	})
 }

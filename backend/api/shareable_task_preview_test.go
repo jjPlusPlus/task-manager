@@ -5,15 +5,15 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/GeneralTask/task-manager/backend/database"
-	"github.com/GeneralTask/task-manager/backend/testutils"
+	"github.com/franchizzle/task-manager/backend/database"
+	"github.com/franchizzle/task-manager/backend/testutils"
 	"github.com/stretchr/testify/assert"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
 
 func TestShareableTaskPreview(t *testing.T) {
-	authToken := login("test_shareable_task_preview@generaltask.com", "")
+	authToken := login("test_shareable_task_preview@resonant-kelpie-404a42.netlify.app", "")
 	title1 := "domain shared"
 	title2 := "not shared"
 	title3 := "public shared"

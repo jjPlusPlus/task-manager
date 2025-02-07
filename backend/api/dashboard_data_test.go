@@ -12,14 +12,14 @@ import (
 
 	"go.mongodb.org/mongo-driver/bson/primitive"
 
-	"github.com/GeneralTask/task-manager/backend/constants"
+	"github.com/franchizzle/task-manager/backend/constants"
 
-	"github.com/GeneralTask/task-manager/backend/database"
+	"github.com/franchizzle/task-manager/backend/database"
 	"github.com/stretchr/testify/assert"
 )
 
 func TestDashboardData(t *testing.T) {
-	authToken := login("test_dashboard_data@generaltask.com", "")
+	authToken := login("test_dashboard_data@resonant-kelpie-404a42.netlify.app", "")
 	api, dbCleanup := GetAPIWithDBCleanup()
 	defer dbCleanup()
 	testTime := time.Date(2023, time.January, 4, 20, 0, 0, 0, time.UTC)

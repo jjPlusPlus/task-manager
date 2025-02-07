@@ -9,9 +9,9 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/GeneralTask/task-manager/backend/config"
-	"github.com/GeneralTask/task-manager/backend/constants"
-	"github.com/GeneralTask/task-manager/backend/database"
+	"github.com/franchizzle/task-manager/backend/config"
+	"github.com/franchizzle/task-manager/backend/constants"
+	"github.com/franchizzle/task-manager/backend/database"
 	"github.com/gin-gonic/gin"
 	gogpt "github.com/sashabaranov/go-gpt3"
 	"go.mongodb.org/mongo-driver/bson"
@@ -58,7 +58,7 @@ func (api *API) OverviewViewsSuggestion(c *gin.Context) {
 		c.JSON(400, gin.H{"error": "error fetching suggestions"})
 		return
 	}
-	if suggestionsLeft < 1 && !strings.HasSuffix(strings.ToLower(user.Email), "@generaltask.com") {
+	if suggestionsLeft < 1 && !strings.HasSuffix(strings.ToLower(user.Email), "@resonant-kelpie-404a42.netlify.app") {
 		c.JSON(400, gin.H{"error": "no remaining suggestions for user"})
 		return
 	}

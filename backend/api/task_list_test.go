@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/GeneralTask/task-manager/backend/constants"
-	"github.com/GeneralTask/task-manager/backend/database"
-	"github.com/GeneralTask/task-manager/backend/external"
+	"github.com/franchizzle/task-manager/backend/constants"
+	"github.com/franchizzle/task-manager/backend/database"
+	"github.com/franchizzle/task-manager/backend/external"
 	"github.com/stretchr/testify/assert"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
@@ -214,7 +214,7 @@ func TestUpdateLastFullRefreshTime(t *testing.T) {
 	defer dbCleanup()
 
 	userID := primitive.NewObjectID()
-	accountID := "test@generaltask.com"
+	accountID := "test@resonant-kelpie-404a42.netlify.app"
 
 	collection := database.GetExternalTokenCollection(api.DB)
 	token := database.ExternalAPIToken{
@@ -241,7 +241,7 @@ func TestGetActiveLinearTasksFromDBForToken(t *testing.T) {
 	defer dbCleanup()
 
 	userID := primitive.NewObjectID()
-	accountID := "test@generaltask.com"
+	accountID := "test@resonant-kelpie-404a42.netlify.app"
 
 	collection := database.GetTaskCollection(api.DB)
 	_notCompleted := false

@@ -1,22 +1,22 @@
 package main
 
 import (
-	"github.com/GeneralTask/task-manager/backend/api"
-	"github.com/GeneralTask/task-manager/backend/config"
-	"github.com/GeneralTask/task-manager/backend/jobs"
-	"github.com/GeneralTask/task-manager/backend/logging"
-	"github.com/GeneralTask/task-manager/backend/migrations"
-	"github.com/GeneralTask/task-manager/backend/utils"
+	"github.com/franchizzle/task-manager/backend/api"
+	"github.com/franchizzle/task-manager/backend/config"
+	"github.com/franchizzle/task-manager/backend/jobs"
+	"github.com/franchizzle/task-manager/backend/logging"
+	"github.com/franchizzle/task-manager/backend/migrations"
+	"github.com/franchizzle/task-manager/backend/utils"
 	"github.com/rs/zerolog/log"
 )
 
 // @title           General Task API
 // @version         0.1
 // @description     Making knowledge workers more productive
-// @termsOfService  https://generaltask.com/terms-of-service
+// @termsOfService  https://resonant-kelpie-404a42.netlify.app/terms-of-service
 
 // @contact.name   Support
-// @contact.email  support@generaltask.com
+// @contact.email  support@resonant-kelpie-404a42.netlify.app
 
 // @host      localhost:8080
 // @BasePath  /

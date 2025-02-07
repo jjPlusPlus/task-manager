@@ -7,7 +7,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/GeneralTask/task-manager/backend/database"
+	"github.com/franchizzle/task-manager/backend/database"
 	"github.com/rs/zerolog/log"
 	"go.mongodb.org/mongo-driver/bson"
 
@@ -71,7 +71,7 @@ func TestCreateTestUser(t *testing.T) {
 		request, _ := http.NewRequest(
 			"POST",
 			"/create_test_user/",
-			bytes.NewBuffer([]byte(`{"email": "test@generaltask.com", "name": "Test User"}`)))
+			bytes.NewBuffer([]byte(`{"email": "test@resonant-kelpie-404a42.netlify.app", "name": "Test User"}`)))
 
 		recorder := httptest.NewRecorder()
 		router.ServeHTTP(recorder, request)

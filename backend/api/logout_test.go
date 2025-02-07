@@ -6,7 +6,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/GeneralTask/task-manager/backend/database"
+	"github.com/franchizzle/task-manager/backend/database"
 	"github.com/stretchr/testify/assert"
 	"go.mongodb.org/mongo-driver/bson"
 )
@@ -14,7 +14,7 @@ import (
 func TestLogout(t *testing.T) {
 	UnauthorizedTest(t, "POST", "/logout/", nil)
 	t.Run("Logout", func(t *testing.T) {
-		authToken := login("approved@generaltask.com", "")
+		authToken := login("approved@resonant-kelpie-404a42.netlify.app", "")
 
 		db, dbCleanup, err := database.GetDBConnection()
 		assert.NoError(t, err)

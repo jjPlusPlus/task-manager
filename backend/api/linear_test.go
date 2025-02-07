@@ -4,13 +4,13 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/GeneralTask/task-manager/backend/config"
-	"github.com/GeneralTask/task-manager/backend/external"
-	"github.com/GeneralTask/task-manager/backend/testutils"
+	"github.com/franchizzle/task-manager/backend/config"
+	"github.com/franchizzle/task-manager/backend/external"
+	"github.com/franchizzle/task-manager/backend/testutils"
 )
 
 const LinearTokenPayload string = `{"access_token":"sample-linear-access-token"}`
-const LinearUserInfoPayload string = `{"data": {"viewer": { "id": "sample-linear-id", "name": "Test User", "email": "test@generaltask.com"}}}`
+const LinearUserInfoPayload string = `{"data": {"viewer": { "id": "sample-linear-id", "name": "Test User", "email": "test@resonant-kelpie-404a42.netlify.app"}}}`
 
 func TestLinkLinear(t *testing.T) {
 	api, cleanup := GetAPIWithDBCleanup()

@@ -5,14 +5,14 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/GeneralTask/task-manager/backend/database"
-	"github.com/GeneralTask/task-manager/backend/testutils"
+	"github.com/franchizzle/task-manager/backend/database"
+	"github.com/franchizzle/task-manager/backend/testutils"
 	"github.com/stretchr/testify/assert"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
 func TestNotesList(t *testing.T) {
-	authToken := login("test_notes_list@generaltask.com", "")
+	authToken := login("test_notes_list@resonant-kelpie-404a42.netlify.app", "")
 	title1 := "title1"
 	title2 := "title2"
 	title3 := "deleted note"

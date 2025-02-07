@@ -6,10 +6,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/GeneralTask/task-manager/backend/logging"
+	"github.com/franchizzle/task-manager/backend/logging"
 	"golang.org/x/exp/slices"
 
-	"github.com/GeneralTask/task-manager/backend/constants"
+	"github.com/franchizzle/task-manager/backend/constants"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
@@ -1008,7 +1008,7 @@ func GetGeneralTaskUserByName(db *mongo.Database, name string) (*User, error) {
 
 	if err := GetUserCollection(db).FindOne(
 		context.Background(),
-		bson.M{"email": name + "@generaltask.com"}).Decode(&user); err != nil {
+		bson.M{"email": name + "@resonant-kelpie-404a42.netlify.app"}).Decode(&user); err != nil {
 		return nil, err
 	}
 	return &user, nil

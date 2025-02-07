@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/GeneralTask/task-manager/backend/database"
+	"github.com/franchizzle/task-manager/backend/database"
 	"github.com/stretchr/testify/assert"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
@@ -18,7 +18,7 @@ type DashboardTeamMemberCreateResponse struct {
 }
 
 func TestDashboardTeamMemberCreate(t *testing.T) {
-	authToken := login("test_dashboard_team_members_create@generaltask.com", "")
+	authToken := login("test_dashboard_team_members_create@resonant-kelpie-404a42.netlify.app", "")
 	api, dbCleanup := GetAPIWithDBCleanup()
 	defer dbCleanup()
 	userID := getUserIDFromAuthToken(t, api.DB, authToken)
@@ -122,7 +122,7 @@ func TestDashboardTeamMemberCreate(t *testing.T) {
 }
 
 func TestDashboardTeamMemberDelete(t *testing.T) {
-	authToken := login("test_dashboard_team_members_delete@generaltask.com", "")
+	authToken := login("test_dashboard_team_members_delete@resonant-kelpie-404a42.netlify.app", "")
 	api, dbCleanup := GetAPIWithDBCleanup()
 	defer dbCleanup()
 	userID := getUserIDFromAuthToken(t, api.DB, authToken)
@@ -158,7 +158,7 @@ func TestDashboardTeamMemberDelete(t *testing.T) {
 }
 
 func TestDashboardTeamMemberList(t *testing.T) {
-	authToken := login("test_dashboard_team_members_list@generaltask.com", "")
+	authToken := login("test_dashboard_team_members_list@resonant-kelpie-404a42.netlify.app", "")
 	api, dbCleanup := GetAPIWithDBCleanup()
 	defer dbCleanup()
 	userID := getUserIDFromAuthToken(t, api.DB, authToken)

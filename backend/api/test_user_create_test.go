@@ -7,7 +7,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/franchizzle/task-manager/backend/database"
+	"github.com/jjPlusPlus/task-manager/backend/database"
 	"github.com/rs/zerolog/log"
 	"go.mongodb.org/mongo-driver/bson"
 

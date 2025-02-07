@@ -1,12 +1,12 @@
 package main
 
 import (
-	"github.com/franchizzle/task-manager/backend/api"
-	"github.com/franchizzle/task-manager/backend/config"
-	"github.com/franchizzle/task-manager/backend/jobs"
-	"github.com/franchizzle/task-manager/backend/logging"
-	"github.com/franchizzle/task-manager/backend/migrations"
-	"github.com/franchizzle/task-manager/backend/utils"
+	"github.com/jjPlusPlus/task-manager/backend/api"
+	"github.com/jjPlusPlus/task-manager/backend/config"
+	"github.com/jjPlusPlus/task-manager/backend/jobs"
+	"github.com/jjPlusPlus/task-manager/backend/logging"
+	"github.com/jjPlusPlus/task-manager/backend/migrations"
+	"github.com/jjPlusPlus/task-manager/backend/utils"
 	"github.com/rs/zerolog/log"
 )
 

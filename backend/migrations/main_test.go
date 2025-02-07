@@ -7,7 +7,7 @@ import (
 
 	"github.com/rs/zerolog/log"
 
-	"github.com/franchizzle/task-manager/backend/database"
+	"github.com/jjPlusPlus/task-manager/backend/database"
 )
 
 func TestMain(m *testing.M) {

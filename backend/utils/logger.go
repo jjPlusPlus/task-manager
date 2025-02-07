@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/franchizzle/task-manager/backend/config"
+	"github.com/jjPlusPlus/task-manager/backend/config"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 )

@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/franchizzle/task-manager/backend/database"
+	"github.com/jjPlusPlus/task-manager/backend/database"
 	"github.com/gin-gonic/gin"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"

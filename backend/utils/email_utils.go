@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"regexp"
 
-	"github.com/franchizzle/task-manager/backend/config"
-	"github.com/franchizzle/task-manager/backend/constants"
+	"github.com/jjPlusPlus/task-manager/backend/config"
+	"github.com/jjPlusPlus/task-manager/backend/constants"
 )
 
 func ExtractSenderName(sendLine string) (string, string) {

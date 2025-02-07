@@ -3,7 +3,7 @@ package api
 import (
 	"net/http"
 
-	"github.com/franchizzle/task-manager/backend/utils"
+	"github.com/jjPlusPlus/task-manager/backend/utils"
 	"github.com/gin-gonic/gin"
 )
 

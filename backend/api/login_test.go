@@ -10,9 +10,9 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 
-	"github.com/franchizzle/task-manager/backend/config"
-	"github.com/franchizzle/task-manager/backend/database"
-	"github.com/franchizzle/task-manager/backend/external"
+	"github.com/jjPlusPlus/task-manager/backend/config"
+	"github.com/jjPlusPlus/task-manager/backend/database"
+	"github.com/jjPlusPlus/task-manager/backend/external"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/oauth2"
 )

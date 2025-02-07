@@ -9,9 +9,9 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/franchizzle/task-manager/backend/config"
-	"github.com/franchizzle/task-manager/backend/constants"
-	"github.com/franchizzle/task-manager/backend/database"
+	"github.com/jjPlusPlus/task-manager/backend/config"
+	"github.com/jjPlusPlus/task-manager/backend/constants"
+	"github.com/jjPlusPlus/task-manager/backend/database"
 	"github.com/gin-gonic/gin"
 	gogpt "github.com/sashabaranov/go-gpt3"
 	"go.mongodb.org/mongo-driver/bson"

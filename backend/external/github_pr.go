@@ -9,11 +9,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/franchizzle/task-manager/backend/logging"
+	"github.com/jjPlusPlus/task-manager/backend/logging"
 	"golang.org/x/oauth2"
 
-	"github.com/franchizzle/task-manager/backend/constants"
-	"github.com/franchizzle/task-manager/backend/database"
+	"github.com/jjPlusPlus/task-manager/backend/constants"
+	"github.com/jjPlusPlus/task-manager/backend/database"
 	"github.com/google/go-github/v45/github"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"

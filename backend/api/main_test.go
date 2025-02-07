@@ -6,10 +6,10 @@ import (
 	"os/exec"
 	"testing"
 
-	"github.com/franchizzle/task-manager/backend/config"
+	"github.com/jjPlusPlus/task-manager/backend/config"
 	"github.com/rs/zerolog/log"
 
-	"github.com/franchizzle/task-manager/backend/database"
+	"github.com/jjPlusPlus/task-manager/backend/database"
 )
 
 func TestMain(m *testing.M) {

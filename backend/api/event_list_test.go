@@ -8,13 +8,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/franchizzle/task-manager/backend/testutils"
+	"github.com/jjPlusPlus/task-manager/backend/testutils"
 
-	"github.com/franchizzle/task-manager/backend/external"
+	"github.com/jjPlusPlus/task-manager/backend/external"
 	"google.golang.org/api/calendar/v3"
 	"google.golang.org/api/googleapi"
 
-	"github.com/franchizzle/task-manager/backend/database"
+	"github.com/jjPlusPlus/task-manager/backend/database"
 	"github.com/stretchr/testify/assert"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"

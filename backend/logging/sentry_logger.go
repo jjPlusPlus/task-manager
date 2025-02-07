@@ -4,7 +4,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/franchizzle/task-manager/backend/config"
+	"github.com/jjPlusPlus/task-manager/backend/config"
 	zlogsentry "github.com/archdx/zerolog-sentry"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"

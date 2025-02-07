@@ -4,11 +4,11 @@ import (
 	"context"
 	"errors"
 
-	"github.com/franchizzle/task-manager/backend/external"
-	"github.com/franchizzle/task-manager/backend/logging"
+	"github.com/jjPlusPlus/task-manager/backend/external"
+	"github.com/jjPlusPlus/task-manager/backend/logging"
 
-	"github.com/franchizzle/task-manager/backend/constants"
-	"github.com/franchizzle/task-manager/backend/database"
+	"github.com/jjPlusPlus/task-manager/backend/constants"
+	"github.com/jjPlusPlus/task-manager/backend/database"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"

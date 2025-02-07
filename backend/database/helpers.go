@@ -6,10 +6,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/franchizzle/task-manager/backend/logging"
+	"github.com/jjPlusPlus/task-manager/backend/logging"
 	"golang.org/x/exp/slices"
 
-	"github.com/franchizzle/task-manager/backend/constants"
+	"github.com/jjPlusPlus/task-manager/backend/constants"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"

@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/franchizzle/task-manager/backend/external"
+	"github.com/jjPlusPlus/task-manager/backend/external"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 
-	"github.com/franchizzle/task-manager/backend/database"
+	"github.com/jjPlusPlus/task-manager/backend/database"
 
 	"github.com/stretchr/testify/assert"
 	"go.mongodb.org/mongo-driver/bson"

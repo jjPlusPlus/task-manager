@@ -3,8 +3,8 @@ package api
 import (
 	"fmt"
 
-	"github.com/franchizzle/task-manager/backend/logging"
-	"github.com/franchizzle/task-manager/backend/settings"
+	"github.com/jjPlusPlus/task-manager/backend/logging"
+	"github.com/jjPlusPlus/task-manager/backend/settings"
 	"github.com/gin-gonic/gin"
 )
 

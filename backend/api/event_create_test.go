@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/franchizzle/task-manager/backend/database"
-	"github.com/franchizzle/task-manager/backend/external"
-	"github.com/franchizzle/task-manager/backend/testutils"
+	"github.com/jjPlusPlus/task-manager/backend/database"
+	"github.com/jjPlusPlus/task-manager/backend/external"
+	"github.com/jjPlusPlus/task-manager/backend/testutils"
 	"github.com/stretchr/testify/assert"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )

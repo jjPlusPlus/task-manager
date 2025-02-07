@@ -1,1 +1,1 @@
-web: go build -o task-manager && ./task-manager
+web: ./general-task-manager
